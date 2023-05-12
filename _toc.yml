@@ -1,0 +1,20 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/index
+
+parts:
+  - caption: Introduction to Python
+    numbered: true
+    chapters:
+      - file: docs/a_about_py
+      - file: docs/a_getting_started
+
+  - caption: Scientific Libraries
+    numbered: true
+    chapters:
+      - file: docs/b_learn_more
+      - file: docs/b_python_by_example
+      - file: docs/c_notebooks.ipynb
+      - url: https://gcerlab.com
