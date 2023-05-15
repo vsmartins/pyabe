@@ -469,9 +469,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">2.1. Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">2.2. Python installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">2.2.1. Anaconda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">2.2.2. Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation-anaconda-distribution">2.2. Python installation: Anaconda Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-choice">2.2.1. Anaconda choice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-install-anaconda">2.2.2. How do I install Anaconda?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-online-services-with-python">2.2.3. Other online services with Python</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-first-code">2.3. Run first code</a></li>
@@ -486,30 +487,68 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <style>
-    body {
-        color: black;
-    }
-</style>
-<p><span style="color:black">## Heading</span></p>
-<section class="tex2jax_ignore mathjax_ignore" id="getting-started">
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started">
 <span id="file-types-notebooks"></span><h1><span class="section-number">2. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h1>
 <section id="overview">
 <h2><span class="section-number">2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 </section>
-<section id="python-installation">
-<h2><span class="section-number">2.2. </span>Python installation<a class="headerlink" href="#python-installation" title="Permalink to this heading">#</a></h2>
-<section id="anaconda">
-<h3><span class="section-number">2.2.1. </span>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this heading">#</a></h3>
+<section id="python-installation-anaconda-distribution">
+<h2><span class="section-number">2.2. </span>Python installation: Anaconda Distribution<a class="headerlink" href="#python-installation-anaconda-distribution" title="Permalink to this heading">#</a></h2>
+<section id="anaconda-choice">
+<h3><span class="section-number">2.2.1. </span>Anaconda choice<a class="headerlink" href="#anaconda-choice" title="Permalink to this heading">#</a></h3>
+<p>I recommend that you install the Anaconda distribution of Python.
+Anaconda is a Python distribution that includes various scientific computing libraries, packages, and tools for data analysis, machine learning, and scientific computing. It aims to provide a comprehensive and user-friendly platform for Python programming in the scientific and data science communities. An alternative distribution of Python is the <a class="reference external" href="http://Python.org">Python.org</a>, and it comes with Python Interpreter, IDLE (a little text editing program) and all of the Python Standard Library modules.</p>
+<p>Upon acquiring the Anaconda distribution of Python from <a class="reference external" href="http://Anaconda.com">Anaconda.com</a>, you receive a Python Interpreter, the Anaconda Prompt (a command line utility), Spyder (a code editor), and approximately 600 additional Python modules that are not part of the Python Standard Library. Moreover, the Anaconda distribution encompasses Anaconda Navigator, a convenient program for swiftly launching Jupyter notebooks.</p>
+<p>The Anaconda distribution of Python offers a multitude of benefits, including the inclusion of Python itself, alongside approximately 600 additional Python packages that are free to install. These supplementary packages comprise many of the most common tools and libraries used to tackle various programming challenges. Opting for Anaconda over the Python version obtainable from <a class="reference external" href="http://Python.org">Python.org</a> affords you Python and the Python Standard Library, plus the added 600 modules. With Anaconda, you can circumvent the cumbersome task of installing each of these modules individually.</p>
+<p>Furthermore, Anaconda’s versatility is evident in its ability to be installed without administrator privileges. This feature is especially useful in situations where program installation is not feasible, such as in school computer labs. Additionally, Anaconda is compatible with MacOS, where the pre-installed version of Python is often outdated and restricted behind a set of administrator privileges, which may cause installation and run-time issues. By utilizing Anaconda instead, these problems can be averted.</p>
+<p>Another advantage of Anaconda is its capability to simplify package management and virtual environments. While these may not seem significant to new Anaconda users, as you progress and begin working on larger projects with multiple dependencies, package management and virtual environments become essential. Anaconda’s inclusion of Conda, a package and environment manager, streamlines the process and makes it significantly more manageable.</p>
+<p><img alt="Anaconda website" src="../../_images/anaconda.png" /></p>
 </section>
-<section id="google-colab">
-<h3><span class="section-number">2.2.2. </span>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this heading">#</a></h3>
+<section id="how-do-i-install-anaconda">
+<h3><span class="section-number">2.2.2. </span>How do I install Anaconda?<a class="headerlink" href="#how-do-i-install-anaconda" title="Permalink to this heading">#</a></h3>
+<p>To install the Anaconda distribution of Python from <a class="reference external" href="http://Anaconda.com">Anaconda.com</a>, you can do the following:</p>
+<ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="https://www.anaconda.com/download/"><strong>Anaconda distribution</strong></a></p></li>
+<li><p>Choose the installer file: Select the appropriate installer file for your operating system (Windows, macOS, or Linux). Make sure to download the Python 3.x version of Anaconda, as it is the latest stable release.</p></li>
+<li><p>Download the installer: Click on the download link for the installer file. The file size may be significant, so it might take some time to complete the download.</p></li>
+<li><p>Run the installer: Once the download is complete, locate the downloaded .exe file on your computer and double-click on it to run the installer.</p></li>
+<li><p>Follow the installation wizard: The Anaconda installation wizard will guide you through the installation process. Follow the on-screen instructions to proceed with the installation.</p></li>
+<li><p>Select the installation options: During the installation, you’ll be prompted to choose the installation location and whether you want to add Anaconda to your system’s PATH environment variable. It is generally recommended to leave the default options selected unless you have specific requirements.</p></li>
+<li><p>Complete the installation: Once you have selected the installation options, proceed with the installation. It may take a few minutes for the installation process to complete.</p></li>
+</ol>
+<p>Verify the installation: After the installation is finished, you can verify if Anaconda has been successfully installed by opening a new terminal or command prompt window and running the command conda –version. If Anaconda is installed correctly, it will display the version number.</p>
+</section>
+<section id="other-online-services-with-python">
+<h3><span class="section-number">2.2.3. </span>Other online services with Python<a class="headerlink" href="#other-online-services-with-python" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://colab.research.google.com/"><strong>Google Colab</strong></a>, short for Google Colaboratory, is a cloud-based integrated development environment (IDE) provided by Google for writing and executing Python code. It allows you to create and share Jupyter notebooks, which are interactive documents containing code, visualizations, and explanatory text.</p>
+<p>Here are some key features and benefits of using Google Colab for Python code:</p>
+<ol class="arabic simple">
+<li><p>Cloud-based: Google Colab runs on Google’s powerful servers, so you don’t need to worry about installing any software or configuring your own development environment. All you need is a web browser and an internet connection.</p></li>
+<li><p>Free access to resources: Colab provides free access to computing resources, including CPU and GPU, which can be used to run your code. This is particularly useful for computationally intensive tasks, such as machine learning or data analysis.</p></li>
+<li><p>Collaboration and sharing: Colab allows you to share your notebooks with others, making it easy to collaborate on projects. You can also share the notebooks publicly and view notebooks shared by the community.</p></li>
+<li><p>Interactive coding environment: Colab notebooks support both code cells and text cells. You can write and execute Python code in code cells, and use text cells to add explanations, documentation, or markdown content. This interactive environment makes it easy to experiment, iterate, and document your code.</p></li>
+<li><p>Rich ecosystem: Colab provides access to a wide range of Python libraries and frameworks, including popular ones like NumPy, Pandas, TensorFlow, and PyTorch. You can install additional libraries as needed.</p></li>
+<li><p>Integration with Google Drive: Colab integrates with Google Drive, allowing you to save and load notebooks directly from your Google Drive account. This makes it convenient for managing and organizing your code files.</p></li>
+</ol>
+<p><strong>To use Google Colab, you can follow these steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Open your web browser and go to the Google Colab website (<a class="reference external" href="https://colab.research.google.com/">https://colab.research.google.com/</a>).</p></li>
+<li><p>Sign in with your Google account if you are not already signed in.</p></li>
+<li><p>Create a new notebook by clicking on “New Notebook” or open an existing notebook from Google Drive or GitHub.</p></li>
+<li><p>In the notebook, you can write your Python code in code cells. To execute the code in a cell, click the “Play” button next to the cell or use the keyboard shortcut Shift+Enter.</p></li>
+<li><p>You can add text, images, and visualizations to your notebook using text cells. Text cells support Markdown syntax for formatting.</p></li>
+<li><p>If you need to install additional libraries, you can use the !pip install command in a code cell.</p></li>
+<li><p>Colab provides various options for saving, exporting, and sharing your notebooks. You can save your changes to Google Drive or download the notebook as a Jupyter (.ipynb) file.</p></li>
+</ol>
+<p>Remember that the code and data in Colab notebooks are stored temporarily, and the session can time out after a period of inactivity. However, you can save your work to Google Drive or other storage locations to persist your notebooks for future use.</p>
 </section>
 </section>
 <section id="run-first-code">
 <h2><span class="section-number">2.3. </span>Run first code<a class="headerlink" href="#run-first-code" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+<p>To run your first code in the Anaconda Prompt, follow these steps:</p>
+<p>Launch Anaconda Prompt: Open the Anaconda Prompt on your system.</p>
+<p>you can directly enter the code into the Python interpreter by running the command.</p>
+<p>This will start an interactive Python session where you can enter and execute code line by line.</p>
 </section>
 </section>
 
@@ -581,9 +620,10 @@ For example, here’s some sample Matplotlib code:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">2.1. Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">2.2. Python installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">2.2.1. Anaconda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">2.2.2. Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation-anaconda-distribution">2.2. Python installation: Anaconda Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-choice">2.2.1. Anaconda choice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-install-anaconda">2.2.2. How do I install Anaconda?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-online-services-with-python">2.2.3. Other online services with Python</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-first-code">2.3. Run first code</a></li>
