@@ -3,18 +3,85 @@
 
 format: jb-book
 root: docs/index
+options:
+  numbered: true
 
 parts:
-  - caption: Introduction to Python
-    numbered: true
+  - caption: 1-INTRODUCTION TO PYTHON
     chapters:
-      - file: docs/a_about_py
-      - file: docs/a_getting_started
+      - file: docs/0_intro_py/L0_0_whatispython
+        sections:
+        - file: docs/0_intro_py/L0_1_getting_started
+        - file: docs/0_intro_py/L0_2_first_syntax
+        - file: docs/0_intro_py/L0_3_variables
+        - file: docs/0_intro_py/L0_4_comments
+        - file: docs/0_intro_py/L0_5_keywords
 
-  - caption: Scientific Libraries
-    numbered: true
+  - caption: 2-PYTHON DATA TYPES
     chapters:
-      - file: docs/b_learn_more
-      - file: docs/b_python_by_example
-      - file: docs/c_notebooks.ipynb
+      - file: docs/1_datatype/L1_0_datatypes
+        sections:
+        - file: docs/1_datatype/L1_1_numbers
+        - file: docs/1_datatype/L1_2_string
+        - file: docs/1_datatype/L1_3_boolean
+        - file: docs/1_datatype/L1_4_list
+        - file: docs/1_datatype/L1_5_tuple
+        - file: docs/1_datatype/L1_6_set
+        - file: docs/1_datatype/L1_7_dict
+
+  - caption: 3-PYTHON OPERATORS
+    chapters:
+      - file: docs/2_oprtors/L2_0_typeoperators
+        sections:
+        - file: docs/2_oprtors/L2_1_arithmetic
+        - file: docs/2_oprtors/L2_2_assignment
+        - file: docs/2_oprtors/L2_3_comparison
+        - file: docs/2_oprtors/L2_4_logical
+        - file: docs/2_oprtors/L2_5_membership
+
+  - caption: 4-PYTHON FLOW CONTROL
+    chapters:
+      - file: docs/3_flowc/L3_0_introflow
+        sections:
+        - file: docs/3_flowc/L3_1_ifelse
+        - file: docs/3_flowc/L3_2_forloop
+        - file: docs/3_flowc/L3_3_whileloop
+        - file: docs/3_flowc/L3_4_break_continue_pass
+
+  - caption: 5-PYTHON FUNCTIONS
+    chapters:
+      - file: docs/4_functions/L4_0_intro_function
+        sections:
+        - file: docs/4_functions/L4_1_function
+        - file: docs/4_functions/L4_2_arguments
+        - file: docs/4_functions/L4_3_variables
+        - file: docs/4_functions/L4_4_builtin_funct
+        - file: docs/4_functions/L4_5_lambda
+
+  - caption: 6-PYTHON CLASSES
+    chapters:
+      - file: docs/5_pyclass/L5_0_firstclass
+      - file: docs/5_pyclass/L5_1_firstmodule
+
+  - caption: 7-EXCEPTION HANDLING
+    chapters:
+      - file: docs/6_except/L6_0_tryelse
+
+  - caption: 8-FILE OPERATION
+    chapters:
+      - file: docs/7_fileop/inputout
+
+  - caption: 9-ADVANCED TOPICS
+    chapters:
+      - file: docs/8_advtopic/commandlines
+      - file: docs/8_advtopic/conda_env
+      - file: docs/8_advtopic/parallel
+
+  - caption: 10-ABE APPLICATIONS
+    chapters:
+      - file: docs/9_abe_apps/01_erosion
+
+  - caption: 11-MISCELLANEOUS
+    chapters:
+      - file: docs/10_misc/gcerlab
       - url: https://gcerlab.com

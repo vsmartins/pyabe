@@ -1,0 +1,885 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>30. Python Classes &#8212; Python Programming for Biosystems Engineering</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/pyclass/firstclass';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="31. Python Module" href="firstmodule.html" />
+    <link rel="prev" title="29. Built-in functions" href="../functions/builtin_funct.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Python Foundation for Biosystems Engineering
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">INTRODUCTION TO PYTHON</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/whatispython.html">1. Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/getting_started.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/first_syntax.html">3. First syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/variables.html">4. Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/comments.html">5. Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/keywords.html">6. Python Keywords</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON DATA TYPES</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../datatype/datatypes.html">7. What are the data types?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/numbers.html">8. Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/string.html">9. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/boolean.html">10. Boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/list.html">11. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/tuple.html">12. Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/set.html">13. Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/dict.html">14. Dictionary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON OPERATORS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/typeoperators.html">15. What are operators?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/arithmetic.html">16. Arithmetic operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/assignment.html">17. Assignment Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/comparison.html">18. Comparison assignment</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/logical.html">20. Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/membership.html">21. Membership</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FLOW CONTROL</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">22. If/elif/else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">23. <strong>For</strong> Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">24. While Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">25. Break\Continue\Pass</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FUNCTIONS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../functions/function.html">26. Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/arguments.html">27. Function arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/lambda.html">28. Lambda/Anonymous Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/builtin_funct.html">29. Built-in functions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON CLASSES &amp; OBJECTS</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">30. Python Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="firstmodule.html">31. Python Module</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">EXCEPTION HANDLING</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">32. Exceptions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">FILE OPERATION</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">33. File I/O</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ADVANCED TOPICS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">34. Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">35. Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">36. Coding Style and PEP8¶</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ABE APPLICATIONS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../abe_apps/01_erosion.html">37. ABE Application 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">38. About the author</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gcerlab.com">https://gcerlab.com</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/vsmartins/pyabe/gh-pages?urlpath=lab/tree/docs/docs/pyclass/firstclass.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/vsmartins/pyabe/blob/gh-pages/docs/docs/pyclass/firstclass.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vsmartins/pyabe" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vsmartins/pyabe/issues/new?title=Issue%20on%20page%20%2Fdocs/pyclass/firstclass.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/docs/pyclass/firstclass.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Python Classes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">30.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes-and-objects">30.2. Classes and Objects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-multiple-objects-of-python-class">30.3. Create Multiple Objects of Python Class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-methods">30.4. Object Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-parameter">30.5. self Parameter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-object-properties">30.6. Modify Object Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#init-method">30.7. <strong>init</strong> method</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="python-classes">
+<h1><span class="section-number">30. </span>Python Classes<a class="headerlink" href="#python-classes" title="Permalink to this heading">#</a></h1>
+<section id="overview">
+<h2><span class="section-number">30.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>In Python, classes and objects are fundamental concepts in object-oriented programming (OOP). They allow you to create reusable code by defining a blueprint for objects, which are instances of a class.</p>
+<p>A class is like a blueprint or a template that describes the attributes (data) and behaviors (methods/functions) that objects of that class should have. It serves as a blueprint for creating multiple objects with similar characteristics.</p>
+<p>Classes and objects allow you to organize your code, encapsulate data and functionality, and create modular and reusable components in your programs. They are fundamental concepts in object-oriented programming and are widely used in Python and many other programming languages.</p>
+</section>
+<section id="classes-and-objects">
+<h2><span class="section-number">30.2. </span>Classes and Objects<a class="headerlink" href="#classes-and-objects" title="Permalink to this heading">#</a></h2>
+<p>Class:</p>
+<ul class="simple">
+<li><p>A class is a blueprint or a template for creating objects.</p></li>
+<li><p>It defines the common attributes (data) and behaviors (methods) that objects of that class will have.</p></li>
+<li><p>It acts as a blueprint from which you can create multiple instances (objects) with similar characteristics.</p></li>
+<li><p>A class is defined using the class keyword followed by the class name.</p></li>
+<li><p>It encapsulates related data and functionality into a single unit.</p></li>
+</ul>
+<p>Object (Instance):</p>
+<ul class="simple">
+<li><p>An object is an instance of a class.</p></li>
+<li><p>It is created from a class using the class constructor (usually the <strong>init</strong> method).</p></li>
+<li><p>An object represents a specific instance of the class, and it has its own unique state (attribute values) separate from other objects.</p></li>
+<li><p>Objects can access and modify the attributes and methods defined in the class.</p></li>
+<li><p>Objects can have different values for the attributes defined in the class, even though they share the same behavior (methods).</p></li>
+<li><p>Objects can interact with each other by invoking methods or accessing attributes.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create a class named MyClass, with a property named x:</span>
+
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c1"># Create Object</span>
+<span class="c1"># Create an object named p1, and print the value of x:</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Access Class Attributes Using Objects</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># create class</span>
+<span class="k">class</span> <span class="nc">Bike</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">gear</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># create objects of class</span>
+<span class="n">bike1</span> <span class="o">=</span> <span class="n">Bike</span><span class="p">()</span>
+
+<span class="c1"># modify the name attribute</span>
+<span class="n">bike1</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Mountain Bike&quot;</span>
+
+<span class="c1"># access the gear attribute</span>
+<span class="n">bike1</span><span class="o">.</span><span class="n">gear</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+5
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="create-multiple-objects-of-python-class">
+<h2><span class="section-number">30.3. </span>Create Multiple Objects of Python Class<a class="headerlink" href="#create-multiple-objects-of-python-class" title="Permalink to this heading">#</a></h2>
+<p>We can also create multiple objects from a single class. For example,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a class</span>
+<span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="c1"># define an attribute</span>
+    <span class="n">employee_id</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># create two objects of the Employee class</span>
+<span class="n">employee1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">()</span>
+<span class="n">employee2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">()</span>
+
+<span class="c1"># access attributes using employee1</span>
+<span class="n">employee1</span><span class="o">.</span><span class="n">employeeID</span> <span class="o">=</span> <span class="mi">1001</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Employee ID: </span><span class="si">{</span><span class="n">employee1</span><span class="o">.</span><span class="n">employeeID</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># access attributes using employee2</span>
+<span class="n">employee2</span><span class="o">.</span><span class="n">employeeID</span> <span class="o">=</span> <span class="mi">1002</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Employee ID: </span><span class="si">{</span><span class="n">employee2</span><span class="o">.</span><span class="n">employeeID</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee ID: 1001
+Employee ID: 1002
+</pre></div>
+</div>
+</div>
+</div>
+<p>The examples above are classes and objects in their simplest form, and are not really useful in real life applications.</p>
+<p>To understand the meaning of classes we have to understand the built-in <strong>init</strong>() function.
+All classes have a function called <strong>init</strong>(), which is always executed when the class is being initiated.</p>
+<p>Use the <strong>init</strong>() function to assign values to object properties, or other operations that are necessary to do when the object is being created:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>John
+36
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="object-methods">
+<h2><span class="section-number">30.4. </span>Object Methods<a class="headerlink" href="#object-methods" title="Permalink to this heading">#</a></h2>
+<p>Objects can also contain methods. Methods in objects are functions that belong to the object.</p>
+<p>In Python, an object method is a function that is defined inside a class and operates on an instance of that class. Methods can access and modify the attributes of the instance they belong to, and they can also perform other operations.</p>
+<p>Object methods are defined similarly to regular functions, but they have an additional first parameter called self, which refers to the instance of the class that the method is being called on. This self parameter is used to access the attributes and methods of the instance.</p>
+<p>Object methods are an important aspect of object-oriented programming, as they allow you to encapsulate behavior within a class and provide a convenient way to manipulate instances of that class. By defining methods in a class, you can ensure that all instances of that class have the same behavior and operate in a consistent manner.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a class</span>
+<span class="k">class</span> <span class="nc">Room</span><span class="p">:</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">breadth</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="c1"># method to calculate area</span>
+    <span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Area of Room =&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">breadth</span><span class="p">)</span>
+
+<span class="c1"># create object of Room class</span>
+<span class="n">study_room</span> <span class="o">=</span> <span class="n">Room</span><span class="p">()</span>
+
+<span class="c1"># assign values to all the attributes</span>
+<span class="n">study_room</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="mf">42.5</span>
+<span class="n">study_room</span><span class="o">.</span><span class="n">breadth</span> <span class="o">=</span> <span class="mf">30.8</span>
+
+<span class="c1"># access method inside class</span>
+<span class="n">study_room</span><span class="o">.</span><span class="n">calculate_area</span><span class="p">()</span>
+
+
+<span class="c1"># Class definition</span>
+<span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+    <span class="c1"># Class attributes</span>
+    <span class="n">attribute1</span> <span class="o">=</span> <span class="n">value1</span>
+    <span class="n">attribute2</span> <span class="o">=</span> <span class="n">value2</span>
+
+    <span class="c1"># Constructor</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute1</span> <span class="o">=</span> <span class="n">parameter1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute2</span> <span class="o">=</span> <span class="n">parameter2</span>
+
+    <span class="c1"># Methods</span>
+    <span class="k">def</span> <span class="nf">method1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">):</span>
+        <span class="c1"># Method code</span>
+
+    <span class="k">def</span> <span class="nf">method2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">):</span>
+        <span class="c1"># Method code</span>
+
+<span class="c1"># Creating an object</span>
+<span class="n">object_name</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="n">argument1</span><span class="p">,</span> <span class="n">argument2</span><span class="p">)</span>
+
+<span class="c1"># Accessing object attributes</span>
+<span class="n">object_name</span><span class="o">.</span><span class="n">attribute1</span>
+<span class="n">object_name</span><span class="o">.</span><span class="n">attribute2</span>
+
+<span class="c1"># Calling object methods</span>
+<span class="n">object_name</span><span class="o">.</span><span class="n">method1</span><span class="p">(</span><span class="n">argument1</span><span class="p">,</span> <span class="n">argument2</span><span class="p">)</span>
+<span class="n">object_name</span><span class="o">.</span><span class="n">method2</span><span class="p">(</span><span class="n">argument1</span><span class="p">,</span> <span class="n">argument2</span><span class="p">)</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Definitions:</span>
+
+<span class="sd">* ClassName is the name of the class you&#39;re defining. Choose a descriptive name that follows Python naming conventions (typically using CamelCase).</span>
+<span class="sd">* attribute1 and attribute2 are class attributes that hold data values. These attributes are shared by all instances of the class.</span>
+<span class="sd">* The __init__ method is the constructor, which is called when a new object is created. It initializes the object&#39;s attributes with the provided values.</span>
+<span class="sd">* method1 and method2 are methods (or functions) defined within the class. They represent the behaviors or actions that objects of the class can perform. The self parameter refers to the instance of the class and allows access to its attributes and methods.</span>
+<span class="sd">* object_name is the name of the object (or instance) you create from the class.</span>
+<span class="sd">* argument1 and argument2 are values passed to the constructor or methods when they are called.</span>
+<span class="sd">* You can access object attributes using dot notation, like object_name.attribute1.</span>
+<span class="sd">* You can call object methods using dot notation as well, like object_name.method1(argument1, argument2).</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;C:\Users\vsm71\AppData\Local\Temp\ipykernel_9364\3218395218.py&quot;</span><span class="gt">, line </span><span class="mi">36</span>
+    <span class="k">def</span> <span class="nf">method2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">):</span>
+      <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="self-parameter">
+<h2><span class="section-number">30.5. </span>self Parameter<a class="headerlink" href="#self-parameter" title="Permalink to this heading">#</a></h2>
+<p>The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.</p>
+<p>It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">mysillyobject</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="n">mysillyobject</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="n">mysillyobject</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+  <span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">abc</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello my name is &quot;</span> <span class="o">+</span> <span class="n">abc</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+<span class="n">p1</span><span class="o">.</span><span class="n">myfunc</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="modify-object-properties">
+<h2><span class="section-number">30.6. </span>Modify Object Properties<a class="headerlink" href="#modify-object-properties" title="Permalink to this heading">#</a></h2>
+<p>You can modify properties on objects like this:</p>
+<p>p1.age = 40</p>
+</section>
+<section id="init-method">
+<h2><span class="section-number">30.7. </span><strong>init</strong> method<a class="headerlink" href="#init-method" title="Permalink to this heading">#</a></h2>
+<p>The <strong>init</strong> method is a special method in Python classes, often referred to as the constructor. It is automatically called when you create a new object (instance) of a class.</p>
+<p>The purpose of the <strong>init</strong> method is to initialize the attributes of an object with the provided values or default values. It allows you to set up the initial state of an object when it is created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+<span class="n">person1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+
+    <span class="k">def</span> <span class="nf">start_engine</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">make</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">&#39;s engine is starting.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs\pyclass"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../functions/builtin_funct.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">29. </span>Built-in functions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="firstmodule.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">31. </span>Python Module</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">30.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes-and-objects">30.2. Classes and Objects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-multiple-objects-of-python-class">30.3. Create Multiple Objects of Python Class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-methods">30.4. Object Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-parameter">30.5. self Parameter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-object-properties">30.6. Modify Object Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#init-method">30.7. <strong>init</strong> method</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Vitor Martins
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

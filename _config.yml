@@ -3,7 +3,7 @@
 
 title: Python Programming for Biosystems Engineering  # The title of the book. Will be placed in the left navbar.
 author: Vitor Martins
-copyright: "2022" # Copyright year to be placed in the footer
+copyright: "2023" # Copyright year to be placed in the footer
 logo: logo.png
 description: This website presents a set of lectures on python programming, designed and written by Vitor Martins.
 
@@ -32,6 +32,10 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  navbar_number_sections: true  # Add a number to each section in your left navbar
+  extra_navbar              : <a href="https://www.gcerlab.com/">Vitor Martins</a>  # Will be displayed underneath the left navbar.
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+
 
 launch_buttons:
   colab_url: "https://colab.research.google.com"
