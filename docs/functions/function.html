@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>24. Jupyter Notebook files &#8212; Python Programming for Biosystems Engineering</title>
+    <title>26. Function &#8212; Python Programming for Biosystems Engineering</title>
   
   
   
@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/functions/function';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="25. Jupyter Notebook files" href="arguments.html" />
-    <link rel="prev" title="23. Jupyter Notebook files" href="../flowc/break_continue_pass.html" />
+    <link rel="next" title="27. Function arguments" href="arguments.html" />
+    <link rel="prev" title="25. Break\Continue\Pass" href="../flowc/break_continue_pass.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -152,79 +152,80 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Python for Biosystems Engineering
+                    Python Foundation for Biosystems Engineering
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">INTRODUCTION TO PYTHON</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/whatispython.html">1. Python programming?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/getting_started.html">2. Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/firstsyntax.html">3. First syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/comments.html">4. Comments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/variables.html">5. Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/keywords.html">6. Python Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/whatispython.html">1. Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/getting_started.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/first_syntax.html">3. First syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/variables.html">4. Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/comments.html">5. Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/keywords.html">6. Python Keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON DATA TYPES</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../datatype/datatypes.html">7. Python Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/numbers.html">8. Numeric Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/string.html">9. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/boolean.html">10. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/list.html">11. Python Sequences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/tuple.html">12. Python Sequences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/set.html">13. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/dict.html">14. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/datatypes.html">7. What are the data types?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/numbers.html">8. Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/string.html">9. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/boolean.html">10. Boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/list.html">11. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/tuple.html">12. Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/set.html">13. Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/dict.html">14. Dictionary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON OPERATORS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../operators/arithmetric.html">15. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/assignment.html">16. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/comparison.html">17. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/logical.html">18. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/membership.html">19. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/typeoperators.html">15. What are operators?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/arithmetic.html">16. Arithmetic operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/assignment.html">17. Assignment Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/comparison.html">18. Comparison assignment</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/logical.html">20. Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/membership.html">21. Membership</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FLOW CONTROL</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">20. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">21. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">22. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">23. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">22. If/elif/else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">23. <strong>For</strong> Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">24. While Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">25. Break\Continue\Pass</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FUNCTIONS</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">24. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arguments.html">25. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="return.html">26. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="buildin_funct.html">27. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lambda.html">28. Jupyter Notebook files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">26. Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arguments.html">27. Function arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lambda.html">28. Lambda/Anonymous Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builtin_funct.html">29. Built-in functions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON CLASSES &amp; OBJECTS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">29. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">30. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">30. Python Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">31. Python Module</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EXCEPTION HANDLING</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">31. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">32. Exceptions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FILE OPERATION</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">32. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">33. File I/O</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ADVANCED TOPICS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">33. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">34. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">35. Coding Style and PEP8¶</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">34. Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">35. Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">36. Coding Style and PEP8¶</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ABE APPLICATIONS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../_examples/a_about_py.html">36. About Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../abe_apps/01_erosion.html">37. ABE Application 1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">37. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">38. About the author</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://gcerlab.com">https://gcerlab.com</a></li>
 </ul>
 
@@ -458,7 +459,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Jupyter Notebook files</h1>
+    <h1>Function</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -468,7 +469,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-image-outputs">24.1. Code blocks and image outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">26.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">26.2. Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-variable-scope">26.3. Python Variable Scope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-local-variables">26.3.1. Python Local Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-global-variables">26.3.2. Python Global Variables</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -480,29 +487,95 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebook-files">
-<span id="file-types-notebooks"></span><h1><span class="section-number">24. </span>Jupyter Notebook files<a class="headerlink" href="#jupyter-notebook-files" title="Permalink to this heading">#</a></h1>
-<p>Falar das formas de instalar</p>
-<p>Jupyter Book supports all Markdown that is supported by Jupyter Notebook.
-This is mostly a flavour of Markdown called <a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a> with minor modifications.
-For more information about writing Jupyter-flavoured Markdown in Jupyter Book, see <span class="xref myst"></span>.</p>
-<section id="code-blocks-and-image-outputs">
-<h2><span class="section-number">24.1. </span>Code blocks and image outputs<a class="headerlink" href="#code-blocks-and-image-outputs" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="function">
+<h1><span class="section-number">26. </span>Function<a class="headerlink" href="#function" title="Permalink to this heading">#</a></h1>
+<section id="overview">
+<h2><span class="section-number">26.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>In Python, a function is a named block of reusable code that performs a specific task. It allows you to encapsulate a set of instructions and execute them by calling the function’s name. Functions provide modularity and reusability, making your code more organized and easier to maintain.</p>
+<p>Functions play a crucial role in structuring and organizing code, promoting code reuse, and improving the maintainability and readability of your programs. They allow you to break down complex tasks into smaller, manageable parts, making your code more modular and easier to understand and debug.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>def function_name(parameters):
+# Code block
+# Perform specific task
+# Optional return statement</p>
+<p>Definition:</p>
+<ul class="simple">
+<li><p>def: The keyword used to define a function.</p></li>
+<li><p>function_name: The name you give to the function, which should be meaningful and descriptive.</p></li>
+<li><p>parameters: Optional inputs that you can pass to the function. They are enclosed in parentheses and separated by commas. Functions can have zero or more parameters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:</span></code> The colon that indicates the start of the function’s code block.</p></li>
+<li><p>Code block: The indented block of code that is executed when the function is called. It contains the specific instructions and operations to perform the desired task.</p></li>
+<li><p>return statement: An optional statement used to specify the value(s) that the function should return when called. If no return statement is used, the function returns None by default.</p></li>
+</ul>
+</div>
+</section>
+<section id="examples">
+<h2><span class="section-number">26.2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_popout tag_remove-input tag_remove-stdout docutils container">
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Smoother linez&#39;)]
-</pre></div>
-</div>
-<img alt="../../_images/091dc7bbb4fd4236940ce85af344a116f0baee65722dc9f6a002ddd7a187c8d0.png" src="../../_images/091dc7bbb4fd4236940ce85af344a116f0baee65722dc9f6a002ddd7a187c8d0.png" />
 </div>
 </div>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>You can also pop out content to the side!</strong></p>
-<p>For more information on how to do this,
-check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
+<p>Functions play a crucial role in structuring and organizing code, promoting code reuse, and improving the maintainability and readability of your programs. They allow you to break down complex tasks into smaller, manageable parts, making your code more modular and easier to understand and debug.</p>
 </aside>
+</section>
+<section id="python-variable-scope">
+<h2><span class="section-number">26.3. </span>Python Variable Scope<a class="headerlink" href="#python-variable-scope" title="Permalink to this heading">#</a></h2>
+<section id="python-local-variables">
+<h3><span class="section-number">26.3.1. </span>Python Local Variables<a class="headerlink" href="#python-local-variables" title="Permalink to this heading">#</a></h3>
+<p>In Python, local variables are variables that are defined within a function and can only be accessed within that function’s scope. Local variables are created when the function is called and destroyed when the function completes its execution or reaches a return statement.</p>
+<p>In this example, the variable x is defined within the my_function() function. It is a local variable because it is only accessible within the function’s scope. When the function is called, the value of x is set to 10 and then printed within the function. However, if we try to access x outside the function, we get a NameError because the variable is not defined in the global scope.</p>
+<p>Local variables provide encapsulation and allow functions to work with data that is specific to their scope without causing naming conflicts with other parts of the program. They promote modularity and help maintain the integrity of data within functions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Local variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">my_function</span><span class="p">()</span>  <span class="c1"># Output: 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Error: NameError: name &#39;x&#39; is not defined</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_33648</span>\<span class="mf">3681644610.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">my_function</span><span class="p">()</span>  <span class="c1"># Output: 10</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Error: NameError: name &#39;x&#39; is not defined</span>
+
+<span class="ne">NameError</span>: name &#39;x&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here, the message variable is local to the greet() function, so it can only be accessed within the function.</p>
+</section>
+<section id="python-global-variables">
+<h3><span class="section-number">26.3.2. </span>Python Global Variables<a class="headerlink" href="#python-global-variables" title="Permalink to this heading">#</a></h3>
+<p>It’s important to note that local variables take precedence over variables with the same name in the global scope. If a local variable shares the same name as a global variable, the local variable will shadow or override the global variable within the function’s scope.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># Global variable</span>
+
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Local variable (shadows the global variable)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">my_function</span><span class="p">()</span>  <span class="c1"># Output: 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Output: 5 (global variable value remains unaffected)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this case, even though there is a global variable x with a value of 5, the local variable x within the my_function() function shadows it, and when printed within the function, it displays the value 10. The global variable x remains unaffected.</p>
+</section>
 </section>
 </section>
 
@@ -543,7 +616,7 @@ check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">23. </span>Jupyter Notebook files</p>
+        <p class="prev-next-title"><span class="section-number">25. </span>Break\Continue\Pass</p>
       </div>
     </a>
     <a class="right-next"
@@ -551,7 +624,7 @@ check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">25. </span>Jupyter Notebook files</p>
+        <p class="prev-next-title"><span class="section-number">27. </span>Function arguments</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,7 +646,13 @@ check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-image-outputs">24.1. Code blocks and image outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">26.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">26.2. Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-variable-scope">26.3. Python Variable Scope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-local-variables">26.3.1. Python Local Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-global-variables">26.3.2. Python Global Variables</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

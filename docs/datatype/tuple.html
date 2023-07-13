@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>12. Python Sequences &#8212; Python Programming for Biosystems Engineering</title>
+    <title>12. Tuples &#8212; Python Programming for Biosystems Engineering</title>
   
   
   
@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/datatype/tuple';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="13. Jupyter Notebook files" href="set.html" />
-    <link rel="prev" title="11. Python Sequences" href="list.html" />
+    <link rel="next" title="13. Set" href="set.html" />
+    <link rel="prev" title="11. Lists" href="list.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -152,79 +152,80 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Python for Biosystems Engineering
+                    Python Foundation for Biosystems Engineering
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">INTRODUCTION TO PYTHON</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/whatispython.html">1. Python programming?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/getting_started.html">2. Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/firstsyntax.html">3. First syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/comments.html">4. Comments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/variables.html">5. Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/keywords.html">6. Python Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/whatispython.html">1. Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/getting_started.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/first_syntax.html">3. First syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/variables.html">4. Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/comments.html">5. Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/keywords.html">6. Python Keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON DATA TYPES</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="datatypes.html">7. Python Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="numbers.html">8. Numeric Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="string.html">9. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="boolean.html">10. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="list.html">11. Python Sequences</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Python Sequences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set.html">13. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dict.html">14. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datatypes.html">7. What are the data types?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numbers.html">8. Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="string.html">9. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boolean.html">10. Boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list.html">11. Lists</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="set.html">13. Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dict.html">14. Dictionary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON OPERATORS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../operators/arithmetric.html">15. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/assignment.html">16. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/comparison.html">17. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/logical.html">18. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/membership.html">19. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/typeoperators.html">15. What are operators?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/arithmetic.html">16. Arithmetic operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/assignment.html">17. Assignment Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/comparison.html">18. Comparison assignment</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/logical.html">20. Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/membership.html">21. Membership</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FLOW CONTROL</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">20. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">21. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">22. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">23. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">22. If/elif/else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">23. <strong>For</strong> Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">24. While Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">25. Break\Continue\Pass</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FUNCTIONS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../functions/function.html">24. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/arguments.html">25. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/return.html">26. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/buildin_funct.html">27. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/lambda.html">28. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/function.html">26. Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/arguments.html">27. Function arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/lambda.html">28. Lambda/Anonymous Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/builtin_funct.html">29. Built-in functions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON CLASSES &amp; OBJECTS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">29. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">30. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">30. Python Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">31. Python Module</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EXCEPTION HANDLING</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">31. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">32. Exceptions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FILE OPERATION</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">32. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">33. File I/O</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ADVANCED TOPICS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">33. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">34. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">35. Coding Style and PEP8¶</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">34. Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">35. Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">36. Coding Style and PEP8¶</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ABE APPLICATIONS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../_examples/a_about_py.html">36. About Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../abe_apps/01_erosion.html">37. ABE Application 1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">37. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">38. About the author</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://gcerlab.com">https://gcerlab.com</a></li>
 </ul>
 
@@ -458,7 +459,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Python Sequences</h1>
+    <h1>Tuples</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -468,10 +469,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">12.1. Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">12.2. Tuples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spring-data-type">12.3. Spring Data type</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-data-type">12.4. Set Data type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">12.1. Overview</a></li>
 </ul>
             </nav>
         </div>
@@ -483,23 +481,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="python-sequences">
-<span id="file-types-notebooks"></span><h1><span class="section-number">12. </span>Python Sequences<a class="headerlink" href="#python-sequences" title="Permalink to this heading">#</a></h1>
-<section id="lists">
-<h2><span class="section-number">12.1. </span>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.</p>
-</section>
-<section id="tuples">
-<h2><span class="section-number">12.2. </span>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.</p>
-</section>
-<section id="spring-data-type">
-<h2><span class="section-number">12.3. </span>Spring Data type<a class="headerlink" href="#spring-data-type" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.</p>
-</section>
-<section id="set-data-type">
-<h2><span class="section-number">12.4. </span>Set Data type<a class="headerlink" href="#set-data-type" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tuples">
+<span id="file-types-notebooks"></span><h1><span class="section-number">12. </span>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h1>
+<section id="overview">
+<h2><span class="section-number">12.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>A tuple is an ordered collection of elements enclosed in parentheses (). Tuples are similar to lists, but they have a key difference: tuples are <strong>immutable</strong>, meaning their elements cannot be modified after creation. Once a tuple is created, its elements and their order remain fixed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>my_tuple = (item1, item2, item3, …, itemN)</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">my_tuple</span></code>: The name given to the tuple variable, which can be any valid variable name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">item1</span></code>, <code class="docutils literal notranslate"><span class="pre">item2</span></code>, <code class="docutils literal notranslate"><span class="pre">item3</span></code>, …, <code class="docutils literal notranslate"><span class="pre">itemN</span></code>: The items or values that make up the elements of the tuple. These items can be of any data type and are enclosed in parentheses (). Items are separated by commas</p></li>
+</ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1, 2, 3, &#39;apple&#39;, &#39;banana&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>However, since tuples are immutable, you cannot modify their elements or assign new values to specific positions. Tuples are commonly used in scenarios where you want to ensure that the data remains unchanged. For example, they are often used to represent fixed collections of values, such as coordinates, configurations, or database records.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># &quot;apple&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+apple
+</pre></div>
+</div>
+</div>
+</div>
+<p>While tuples cannot be modified after creation, you can perform operations on them without altering the original tuple. For example, you can concatenate tuples or create new tuples by slicing existing ones.</p>
 </section>
 </section>
 
@@ -540,7 +563,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">11. </span>Python Sequences</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Lists</p>
       </div>
     </a>
     <a class="right-next"
@@ -548,7 +571,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">13. </span>Jupyter Notebook files</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Set</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -570,10 +593,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">12.1. Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">12.2. Tuples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spring-data-type">12.3. Spring Data type</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-data-type">12.4. Set Data type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">12.1. Overview</a></li>
 </ul>
   </nav></div>
 

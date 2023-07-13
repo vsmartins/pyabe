@@ -1,30 +1,26 @@
-# Python for Biosystems Engineering
+# <span style="color:black;">**Python Foundation for Agricultural and Biological Engineering**</span>
 
-# What is this about?
-Explain how python is useful for biosystems engineering
+**By [Vitor Martins](https://www.gcerlab.com/) 🛰️🌍💻**
 
+## <span style="color:black;">Preface</span>
 
-This is a short sequence of lectures on Python programming for scientific
-work, written by [Vitor S. Martins](http://www.gcerlab.com/).
+Welcome to our PyABE webpage dedicated to the amazing world of Python focused on Agricultural and Biosystems Engineering. Python is the real deal when it comes to automation and processing, and it has made a significant impact on my own career, especially in satellite image processing.
 
+Why Python? Picture this: you're an Agricultural and Biosystems Engineer working with massive amounts of data collected from satellites, drones, or other remote sensing devices. You need to analyze this data, extract meaningful insights, and make informed decisions to optimize crop production, and manage resources efficiently. Python offers a plethora of powerful libraries and frameworks that are very useful for agricultural and biosystems engineering. With these tools, you can effortlessly manipulate and analyze data, perform statistical calculations, and build advanced models to predict and optimize various aspects of agricultural systems.
 
-## About the author
+Whether you're processing satellite imagery or implementing machine learning algorithms, Python provides specialized libraries like OpenCV and scikit-image for image processing, and even robust machine learning frameworks such as TensorFlow and PyTorch.The focus of this book is overwhelmingly practical; we will demonstrate methods and tools you can use to develop and maintain packages quickly, reproducibly, and with as much automation as possible — so you can focus on writing and sharing code!
 
-Dr. Martins is an assistant professor at Department of Agricultural and Biological Engineering in Mississippi State University.
-Vitor S. Martins is an Assistant Professor of Agricultural and Biological Engineering at the Mississippi State University with expertise in satellite image processing, quantitative remote sensing, and water quality.  
-He received a B.Sc. degree (2014) in Agricultural and Environmental Engineering from Federal University of Vicosa, Brazil, M.Sc. degree (2017) in Remote Sensing from Brazilian Institute for Space Research, and a Ph.D. (2020) in Agricultural and Biosystems Engineering from Iowa State University.  
-Vitor uses satellite multi-spectral images to retrieve water quality parameters such as turbidity, chlorophyll-a, Secchi disk for long-term changes, and hot spot pollution. Vitor integrates field sample collection and satellite images for inland and coastal waters studies.  
-Vitor worked on a NASA-funded project as a postdoctoral fellow at Michigan State University for 2 years and has served NASA Earth Science Data System Working Groups (2020-2022) where he contributed to Data Interoperability for Machine Learning Data & satellite remote sensing.
+Speaking from personal experience, Python has been instrumental in my journey as a remote sensing enthusiast. The ability to write concise code, combined with the vast ecosystem of libraries, has allowed me to tackle complex problems and develop innovative solutions. So, mastering Python is an absolute relevant, and it will open up a world of possibilities for your career.
 
-```{note}
-These lectures were built using the new Sphinx-based [Jupyter Book
-2.0](https://beta.jupyterbook.org/intro.html) tool set, as part of the
-[ExecutableBookProject](https://ebp.jupyterbook.org/en/latest/).  They are
-intended mainly as a demonstration of these tools.
-Instructions for how to build them from source can be found in the Jupyter
-Book documentation.
+## <span style="color:black;">My motivation</span>
+
+Ever since my graduation over a decade ago, my daily routine has revolved around coding and data analysis, and Python made a big difference in my productivity and outcomes. This tutorial was built to be simple Python learning for practitioners like me, and my tutorial focuses on basic concepts of Python with concise explanations and examples that you need as a practitioner. There are many other Python tutorials and this one might be the kick-off experience within this programming language.
+
+```{image} /logo.png
+:width: 250px
+:align: center
 ```
 
-
-```{tableofcontents}
+```{note}
+These lectures on Python programming was written by [Vitor S. Martins](http://www.gcerlab.com/), and were not fully revised for public release yet.
 ```

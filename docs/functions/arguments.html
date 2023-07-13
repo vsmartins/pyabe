@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>25. Jupyter Notebook files &#8212; Python Programming for Biosystems Engineering</title>
+    <title>27. Function arguments &#8212; Python Programming for Biosystems Engineering</title>
   
   
   
@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/functions/arguments';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="26. Jupyter Notebook files" href="return.html" />
-    <link rel="prev" title="24. Jupyter Notebook files" href="function.html" />
+    <link rel="next" title="28. Lambda/Anonymous Function" href="lambda.html" />
+    <link rel="prev" title="26. Function" href="function.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -152,79 +152,80 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Python for Biosystems Engineering
+                    Python Foundation for Biosystems Engineering
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">INTRODUCTION TO PYTHON</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/whatispython.html">1. Python programming?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/getting_started.html">2. Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/firstsyntax.html">3. First syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/comments.html">4. Comments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/variables.html">5. Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro_py/keywords.html">6. Python Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/whatispython.html">1. Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/getting_started.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/first_syntax.html">3. First syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/variables.html">4. Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/comments.html">5. Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro_py/keywords.html">6. Python Keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON DATA TYPES</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../datatype/datatypes.html">7. Python Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/numbers.html">8. Numeric Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/string.html">9. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/boolean.html">10. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/list.html">11. Python Sequences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/tuple.html">12. Python Sequences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/set.html">13. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datatype/dict.html">14. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/datatypes.html">7. What are the data types?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/numbers.html">8. Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/string.html">9. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/boolean.html">10. Boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/list.html">11. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/tuple.html">12. Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/set.html">13. Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datatype/dict.html">14. Dictionary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON OPERATORS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../operators/arithmetric.html">15. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/assignment.html">16. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/comparison.html">17. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/logical.html">18. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../operators/membership.html">19. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/typeoperators.html">15. What are operators?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/arithmetic.html">16. Arithmetic operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/assignment.html">17. Assignment Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/comparison.html">18. Comparison assignment</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/logical.html">20. Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oprtors/membership.html">21. Membership</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FLOW CONTROL</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">20. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">21. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">22. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">23. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/ifelse.html">22. If/elif/else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/forloop.html">23. <strong>For</strong> Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/whileloop.html">24. While Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flowc/break_continue_pass.html">25. Break\Continue\Pass</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON FUNCTIONS</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="function.html">24. Jupyter Notebook files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">25. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="return.html">26. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="buildin_funct.html">27. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lambda.html">28. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function.html">26. Function</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">27. Function arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lambda.html">28. Lambda/Anonymous Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builtin_funct.html">29. Built-in functions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">PYTHON CLASSES &amp; OBJECTS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">29. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">30. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstclass.html">30. Python Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pyclass/firstmodule.html">31. Python Module</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EXCEPTION HANDLING</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">31. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../except/tryelse.html">32. Exceptions</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FILE OPERATION</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">32. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileop/inputout.html">33. File I/O</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ADVANCED TOPICS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">33. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">34. Jupyter Notebook files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">35. Coding Style and PEP8¶</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/commandlines.html">34. Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/decorators.html">35. Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advtopic/pep8.html">36. Coding Style and PEP8¶</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ABE APPLICATIONS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../_examples/a_about_py.html">36. About Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../abe_apps/01_erosion.html">37. ABE Application 1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">37. Jupyter Notebook files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/gcerlab.html">38. About the author</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://gcerlab.com">https://gcerlab.com</a></li>
 </ul>
 
@@ -458,7 +459,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Jupyter Notebook files</h1>
+    <h1>Function arguments</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -468,7 +469,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-image-outputs">25.1. Code blocks and image outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">27.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">27.2. Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-keyword-argument">27.3. Python Keyword Argument</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-function-with-arbitrary-arguments">27.4. Python Function With Arbitrary Arguments</a></li>
 </ul>
             </nav>
         </div>
@@ -480,29 +484,143 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebook-files">
-<span id="file-types-notebooks"></span><h1><span class="section-number">25. </span>Jupyter Notebook files<a class="headerlink" href="#jupyter-notebook-files" title="Permalink to this heading">#</a></h1>
-<p>Falar das formas de instalar</p>
-<p>Jupyter Book supports all Markdown that is supported by Jupyter Notebook.
-This is mostly a flavour of Markdown called <a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a> with minor modifications.
-For more information about writing Jupyter-flavoured Markdown in Jupyter Book, see <span class="xref myst"></span>.</p>
-<section id="code-blocks-and-image-outputs">
-<h2><span class="section-number">25.1. </span>Code blocks and image outputs<a class="headerlink" href="#code-blocks-and-image-outputs" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="function-arguments">
+<h1><span class="section-number">27. </span>Function arguments<a class="headerlink" href="#function-arguments" title="Permalink to this heading">#</a></h1>
+<section id="overview">
+<h2><span class="section-number">27.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>In Python, an argument in a function is a value that is passed to the function when it is called. Arguments provide a way to supply input data to a function, allowing the function to perform operations on that data or use it in some way.</p>
+<p>Arguments can be of different types, such as numbers, strings, lists, tuples, or even other functions. When defining a function, you can specify parameters that serve as placeholders for the arguments that will be passed to the function.</p>
+</section>
+<section id="example-1">
+<h2><span class="section-number">27.2. </span>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_popout tag_remove-input tag_remove-stdout docutils container">
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Smoother linez&#39;)]
+</div>
+</div>
+<p>In the above example, the function add_numbers() takes two parameters: a and b. Notice the line, add_numbers(2, 3)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>  <span class="n">b</span> <span class="o">=</span> <span class="mi">8</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sum:&#39;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+
+
+<span class="c1"># function call with two arguments</span>
+<span class="n">add_numbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">#  function call with one argument</span>
+<span class="n">add_numbers</span><span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># function call with no arguments</span>
+<span class="n">add_numbers</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="../../_images/091dc7bbb4fd4236940ce85af344a116f0baee65722dc9f6a002ddd7a187c8d0.png" src="../../_images/091dc7bbb4fd4236940ce85af344a116f0baee65722dc9f6a002ddd7a187c8d0.png" />
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sum: 5
+Sum: 10
+Sum: 15
+</pre></div>
 </div>
 </div>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>You can also pop out content to the side!</strong></p>
-<p>For more information on how to do this,
-check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
-</aside>
+</div>
+</section>
+<section id="python-keyword-argument">
+<h2><span class="section-number">27.3. </span>Python Keyword Argument<a class="headerlink" href="#python-keyword-argument" title="Permalink to this heading">#</a></h2>
+<p>In Python, keyword arguments are a way to pass arguments to a function by specifying the parameter name along with its corresponding value. Unlike positional arguments, which rely on the order of arguments, keyword arguments are identified by their parameter name, allowing you to provide arguments in any order.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display_info</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;First Name:&#39;</span><span class="p">,</span> <span class="n">first_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Last Name:&#39;</span><span class="p">,</span> <span class="n">last_name</span><span class="p">)</span>
+
+<span class="n">display_info</span><span class="p">(</span><span class="n">last_name</span> <span class="o">=</span> <span class="s1">&#39;Cartman&#39;</span><span class="p">,</span> <span class="n">first_name</span> <span class="o">=</span> <span class="s1">&#39;Eric&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First Name: Eric
+Last Name: Cartman
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here, we have assigned names to arguments during the function call.</p>
+<p>Hence, first_name in the function call is assigned to first_name in the function definition. Similarly, last_name in the function call is assigned to last_name in the function definition.</p>
+<p>def greet(name, age):
+print(“Hello, ” + name + “! You are ” + str(age) + ” years old.”)</p>
+<p>greet(name=”Alice”, age=25)
+greet(age=30, name=”Bob”)</p>
+<p>It’s important to note that when using keyword arguments, all the positional arguments must come before the keyword arguments. For example, in the function call greet(“Alice”, age=25), “Alice” is a positional argument, while age=25 is a keyword argument.</p>
+</section>
+<section id="python-function-with-arbitrary-arguments">
+<h2><span class="section-number">27.4. </span>Python Function With Arbitrary Arguments<a class="headerlink" href="#python-function-with-arbitrary-arguments" title="Permalink to this heading">#</a></h2>
+<p>Sometimes, we do not know in advance the number of arguments that will be passed into a function. To handle this kind of situation, we can use arbitrary arguments in Python.</p>
+<p>Arbitrary arguments allow us to pass a varying number of values during a function call.</p>
+<p>We use an asterisk (*) before the parameter name to denote this kind of argument. For example,</p>
+<p>In Python, you can define functions that accept an arbitrary number of arguments using the special syntax of *args or **kwargs. These are known as “arbitrary arguments” or “variable-length arguments.”</p>
+<p>The *args parameter allows a function to accept an arbitrary number of positional arguments. It collects all the positional arguments into a tuple within the function.</p>
+<p>Arbitrary positional arguments using *args:
+The *args parameter allows a function to accept an arbitrary number of positional arguments. It collects all the positional arguments into a tuple within the function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_numbers</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">total</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">sum_numbers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 15</span>
+
+
+<span class="c1"># program to find sum of multiple numbers</span>
+
+<span class="k">def</span> <span class="nf">find_sum</span><span class="p">(</span><span class="o">*</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">num</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum = &quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># function call with 3 arguments</span>
+<span class="n">find_sum</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># function call with 2 arguments</span>
+<span class="n">find_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>15
+Sum =  6
+Sum =  13
+</pre></div>
+</div>
+</div>
+</div>
+<p>Arbitrary keyword arguments using **kwargs:
+The **kwargs parameter allows a function to accept an arbitrary number of keyword arguments. It collects all the keyword arguments into a dictionary within the function, where the keys are the argument names and the values are the corresponding argument values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display_info</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+
+<span class="n">display_info</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">&quot;London&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>name: Alice
+age: 25
+city: London
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can combine both *args and **kwargs in a function definition to accept both positional and keyword arguments arbitrarily.</p>
 </section>
 </section>
 
@@ -543,15 +661,15 @@ check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">24. </span>Jupyter Notebook files</p>
+        <p class="prev-next-title"><span class="section-number">26. </span>Function</p>
       </div>
     </a>
     <a class="right-next"
-       href="return.html"
+       href="lambda.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">26. </span>Jupyter Notebook files</p>
+        <p class="prev-next-title"><span class="section-number">28. </span>Lambda/Anonymous Function</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,7 +691,10 @@ check out the <span class="xref std std-ref">layout/sidebar</span> section.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-image-outputs">25.1. Code blocks and image outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">27.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">27.2. Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-keyword-argument">27.3. Python Keyword Argument</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-function-with-arbitrary-arguments">27.4. Python Function With Arbitrary Arguments</a></li>
 </ul>
   </nav></div>
 
