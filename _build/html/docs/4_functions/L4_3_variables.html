@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Python Variable Scope &#8212; Python Programming for Biosystems Engineering</title>
+    <title>Variable Scope &#8212; Python Programming for Biosystems Engineering</title>
   
   
   
@@ -136,14 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
+    <p class="title logo__title">Python Programming for Biosystems Engineering</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -152,7 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    <span style="color:black;">Python Foundation for Agricultural and Biological Engineering</span>
+                    <span style="color:black;">Python Foundation for Agricultural and Biosystems Engineering</span>
                 </a>
             </li>
         </ul>
@@ -206,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="L4_0_intro_function.html"><span style="color:black;">Function</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="L4_1_function.html"><span style="color:black;">Function</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="L4_2_arguments.html"><span style="color:black;">Function arguments</span></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:black;">Python Variable Scope</span></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:black;">Variable Scope</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="L4_4_builtin_funct.html"><span style="color:black;">Built-in functions</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="L4_5_lambda.html"><span style="color:black;">Lambda Function</span></a></li>
 </ul>
@@ -471,7 +465,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><span style="color:black;">Python Variable Scope</span></h1>
+    <h1><span style="color:black;">Variable Scope</span></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -494,8 +488,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="span-style-color-black-python-variable-scope-span">
-<h1><span style="color:black;">Python Variable Scope</span><a class="headerlink" href="#span-style-color-black-python-variable-scope-span" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="span-style-color-black-variable-scope-span">
+<h1><span style="color:black;">Variable Scope</span><a class="headerlink" href="#span-style-color-black-variable-scope-span" title="Permalink to this heading">#</a></h1>
 <section id="span-style-color-black-local-variables-span">
 <h2><span style="color:black;">Local Variables</span><a class="headerlink" href="#span-style-color-black-local-variables-span" title="Permalink to this heading">#</a></h2>
 <p>The variables within the function are called as “local variables”, and are temporarily created during the function execution. These local variables are not
@@ -517,7 +511,7 @@ available outside the function, and are only accessible within the function’s 
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_93024</span>\<span class="mf">3681644610.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_39192</span>\<span class="mf">3681644610.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> 
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">my_function</span><span class="p">()</span>  <span class="c1"># Output: 10</span>
 <span class="ne">----&gt; </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Error: NameError: name &#39;x&#39; is not defined</span>
@@ -530,7 +524,7 @@ available outside the function, and are only accessible within the function’s 
 </section>
 <section id="span-style-color-black-global-variables-span">
 <h2><span style="color:black;">Global Variables</span><a class="headerlink" href="#span-style-color-black-global-variables-span" title="Permalink to this heading">#</a></h2>
-<p>In other way, the global variables are defined outside of functions or classes, and are accessible any part of your program. Note that local and global variables can have same name, the function will use the local variable and it will not modify the global variable</p>
+<p>Global variables are defined outside of functions or classes, and are accessible any part of your program. Note that local and global variables can have same name, the function will use the local variable and it will not modify the global variable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># Global variable</span>

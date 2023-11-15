@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Lambda Function" href="L4_5_lambda.html" />
-    <link rel="prev" title="Python Variable Scope" href="L4_3_variables.html" />
+    <link rel="prev" title="Variable Scope" href="L4_3_variables.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -136,14 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
+    <p class="title logo__title">Python Programming for Biosystems Engineering</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -152,7 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    <span style="color:black;">Python Foundation for Agricultural and Biological Engineering</span>
+                    <span style="color:black;">Python Foundation for Agricultural and Biosystems Engineering</span>
                 </a>
             </li>
         </ul>
@@ -206,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="L4_0_intro_function.html"><span style="color:black;">Function</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="L4_1_function.html"><span style="color:black;">Function</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="L4_2_arguments.html"><span style="color:black;">Function arguments</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="L4_3_variables.html"><span style="color:black;">Python Variable Scope</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="L4_3_variables.html"><span style="color:black;">Variable Scope</span></a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:black;">Built-in functions</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="L4_5_lambda.html"><span style="color:black;">Lambda Function</span></a></li>
 </ul>
@@ -498,7 +492,7 @@ document.write(`
 <h1><span style="color:black;">Built-in functions</span><a class="headerlink" href="#span-style-color-black-built-in-functions-span" title="Permalink to this heading">#</a></h1>
 <section id="span-style-color-black-overview-span">
 <h2><span style="color:black;">Overview</span><a class="headerlink" href="#span-style-color-black-overview-span" title="Permalink to this heading">#</a></h2>
-<p>Python has a many built-in functions, installed with your python, that are readily available for use in your program.</p>
+<p>Python has a many built-in functions, installed with your python interpreter, that are readily available for use in your program.</p>
 <ul class="simple">
 <li><p>A comprehensive list of built-in functions and their descriptions: <a class="reference external" href="https://docs.python.org/3/library/functions.html">https://docs.python.org/3/library/functions.html</a></p></li>
 </ul>
@@ -550,10 +544,10 @@ document.write(`
 </section>
 <section id="span-style-color-black-examples-span">
 <h2><span style="color:black;">Examples</span><a class="headerlink" href="#span-style-color-black-examples-span" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">len()</span></code>: Finding the length of an object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># len(): Finding the length of an object.</span>
-<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Length of the list:&quot;</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
 </pre></div>
@@ -565,10 +559,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">type()</span></code>: Determining the type of an object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># type(): Determining the type of an object.</span>
-<span class="n">value</span> <span class="o">=</span> <span class="mf">3.14</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mf">3.14</span>
 <span class="n">data_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data type:&quot;</span><span class="p">,</span> <span class="n">data_type</span><span class="p">)</span>
 </pre></div>
@@ -580,10 +574,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">range()</span></code>: Generating a sequence of numbers.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># range(): Generating a sequence of numbers.</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [1, 2, 3, 4, 5]</span>
 </pre></div>
 </div>
@@ -594,10 +588,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">float()</span></code>, <code class="docutils literal notranslate"><span class="pre">str()</span></code>: Converting values to specific data types.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># int(), float(), str(): Converting values to specific data types.</span>
-<span class="n">num</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>  <span class="c1"># string</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>  <span class="c1"># string</span>
 <span class="n">num_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">num_int</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Output: 15</span>
 
@@ -617,10 +611,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">sum()</span></code>: Calculating the sum of elements in a list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sum(): Calculating the sum of elements in a list.</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum:&quot;</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
 </pre></div>
@@ -632,10 +626,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">enumerate</span></code> is a way to get the index and value in the for loop</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># enumerate in the for loop</span>
-<span class="n">msu_majors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bme&#39;</span><span class="p">,</span> <span class="s1">&#39;cse&#39;</span><span class="p">,</span> <span class="s1">&#39;bse&#39;</span><span class="p">,</span> <span class="s1">&#39;aetb&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">msu_majors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bme&#39;</span><span class="p">,</span> <span class="s1">&#39;cse&#39;</span><span class="p">,</span> <span class="s1">&#39;bse&#39;</span><span class="p">,</span> <span class="s1">&#39;aetb&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">major</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">msu_majors</span><span class="p">):</span>  <span class="c1"># &quot;i&quot; is like a counter, &quot;major&quot; is the list element in each interaction</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">major</span><span class="p">)</span>
 </pre></div>
@@ -690,7 +684,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span style="color:black;">Python Variable Scope</span></p>
+        <p class="prev-next-title"><span style="color:black;">Variable Scope</span></p>
       </div>
     </a>
     <a class="right-next"
