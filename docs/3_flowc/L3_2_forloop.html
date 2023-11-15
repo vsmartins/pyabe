@@ -136,14 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
+    <p class="title logo__title">Python Programming for Biosystems Engineering</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -152,7 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    <span style="color:black;">Python Foundation for Agricultural and Biological Engineering</span>
+                    <span style="color:black;">Python Foundation for Agricultural and Biosystems Engineering</span>
                 </a>
             </li>
         </ul>
@@ -206,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_functions/L4_0_intro_function.html"><span style="color:black;">Function</span></a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_1_function.html"><span style="color:black;">Function</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_2_arguments.html"><span style="color:black;">Function arguments</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Python Variable Scope</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Variable Scope</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_4_builtin_funct.html"><span style="color:black;">Built-in functions</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_5_lambda.html"><span style="color:black;">Lambda Function</span></a></li>
 </ul>
@@ -549,6 +543,7 @@ n
 </div>
 </div>
 </div>
+<p>With these simple examples, you can extrapolate for more complex interactions, such as looping over a list of image paths and open one image each time</p>
 </section>
 <section id="span-style-color-black-list-comprehensions-span">
 <h2><span style="color:black;">List Comprehensions</span><a class="headerlink" href="#span-style-color-black-list-comprehensions-span" title="Permalink to this heading">#</a></h2>
@@ -563,6 +558,21 @@ n
 <li><p><code class="docutils literal notranslate"><span class="pre">iterable</span></code>: iterable object (list, tuple, string, or range, etc)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">condition</span></code> (optional): An optional condition that filters the items from the iterable. Only items that satisfy the condition are included in the new list.</p></li>
 </ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example of list comprehension</span>
+
+<span class="c1"># From</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># TO</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="span-style-color-black-loop-without-accessing-items-span">

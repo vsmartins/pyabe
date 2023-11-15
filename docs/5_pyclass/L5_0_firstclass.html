@@ -136,14 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
+    <p class="title logo__title">Python Programming for Biosystems Engineering</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -152,7 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    <span style="color:black;">Python Foundation for Agricultural and Biological Engineering</span>
+                    <span style="color:black;">Python Foundation for Agricultural and Biosystems Engineering</span>
                 </a>
             </li>
         </ul>
@@ -206,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_functions/L4_0_intro_function.html"><span style="color:black;">Function</span></a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_1_function.html"><span style="color:black;">Function</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_2_arguments.html"><span style="color:black;">Function arguments</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Python Variable Scope</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Variable Scope</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_4_builtin_funct.html"><span style="color:black;">Built-in functions</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_5_lambda.html"><span style="color:black;">Lambda Function</span></a></li>
 </ul>
@@ -552,53 +546,11 @@ document.write(`
 <li><p>An object is an instance of a class</p></li>
 <li><p>Objects can have different values, but share the same methods</p></li>
 </ul>
+<a class="reference internal image-reference" href="../../_images/class_object.png"><img alt="../../_images/class_object.png" class="align-center" src="../../_images/class_object.png" style="width: 450px;" /></a>
 </section>
 <section id="span-style-color-black-create-multiple-objects-span">
 <h2><span style="color:black;">Create Multiple Objects</span><a class="headerlink" href="#span-style-color-black-create-multiple-objects-span" title="Permalink to this heading">#</a></h2>
 <p>The interesting aspect of Python Class is to reuse and create multiple objects from a single class.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a class</span>
-<span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-    <span class="c1"># define an attribute</span>
-    <span class="n">student_id</span> <span class="o">=</span> <span class="n">vsm</span>
-
-<span class="c1"># create two objects of the Employee class</span>
-<span class="n">Student1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">()</span>
-<span class="n">Student2</span> <span class="o">=</span> <span class="n">Student</span><span class="p">()</span>
-
-<span class="c1"># access attributes using Student1</span>
-<span class="n">Student1</span><span class="o">.</span><span class="n">student_id</span> <span class="o">=</span> <span class="s1">&#39;test_2@msstate.edu&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Student ID: </span><span class="si">{</span><span class="n">Student1</span><span class="o">.</span><span class="n">student_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># access attributes using Student2</span>
-<span class="n">Student2</span><span class="o">.</span><span class="n">student_id</span> <span class="o">=</span> <span class="s1">&#39;test_2@msstate.edu&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Employee ID: </span><span class="si">{</span><span class="n">Student2</span><span class="o">.</span><span class="n">student_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_86636</span>\<span class="mf">2754255128.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># define a class</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="c1"># define an attribute</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">student_id</span> <span class="o">=</span> <span class="n">vsm</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-
-<span class="nn">~\AppData\Local\Temp\ipykernel_86636\2754255128.py</span> in <span class="ni">Student</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="c1"># define an attribute</span>
-<span class="ne">----&gt; </span><span class="mi">4</span>     <span class="n">student_id</span> <span class="o">=</span> <span class="n">vsm</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># create two objects of the Employee class</span>
-
-<span class="ne">NameError</span>: name &#39;vsm&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="span-style-color-black-init-span">
 <h2><span style="color:black;"><strong>init</strong></span><a class="headerlink" href="#span-style-color-black-init-span" title="Permalink to this heading">#</a></h2>
@@ -616,6 +568,12 @@ document.write(`
 
 <span class="nb">print</span><span class="p">(</span><span class="n">msu_student</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">msu_student</span><span class="o">.</span><span class="n">major</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>you
+ABE
 </pre></div>
 </div>
 </div>
@@ -639,6 +597,11 @@ In other words, object methods are regular functions inside the class, and the <
 
 <span class="n">msu_student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">&quot;you&quot;</span><span class="p">,</span> <span class="s2">&quot;ABE&quot;</span><span class="p">,</span> <span class="mi">2023</span><span class="p">)</span>
 <span class="n">msu_student</span><span class="o">.</span><span class="n">calculate_graduation</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Expected graduation year = 2027
 </pre></div>
 </div>
 </div>

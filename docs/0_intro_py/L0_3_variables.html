@@ -136,14 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
+    <p class="title logo__title">Python Programming for Biosystems Engineering</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -152,7 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    <span style="color:black;">Python Foundation for Agricultural and Biological Engineering</span>
+                    <span style="color:black;">Python Foundation for Agricultural and Biosystems Engineering</span>
                 </a>
             </li>
         </ul>
@@ -206,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_functions/L4_0_intro_function.html"><span style="color:black;">Function</span></a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_1_function.html"><span style="color:black;">Function</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_2_arguments.html"><span style="color:black;">Function arguments</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Python Variable Scope</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_3_variables.html"><span style="color:black;">Variable Scope</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_4_builtin_funct.html"><span style="color:black;">Built-in functions</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_functions/L4_5_lambda.html"><span style="color:black;">Lambda Function</span></a></li>
 </ul>
@@ -499,22 +493,23 @@ document.write(`
 <h1><span style="color:black;">Variables</span><a class="headerlink" href="#span-style-color-black-variables-span" title="Permalink to this heading">#</a></h1>
 <section id="span-style-color-black-overview-span">
 <h2><span style="color:black;">Overview</span><a class="headerlink" href="#span-style-color-black-overview-span" title="Permalink to this heading">#</a></h2>
-<p>In your first code, you wrote a simple <code class="docutils literal notranslate"><span class="pre">print()</span></code>, but python is way more excited than this. You can use variables to store values, and they act as boxes that stores information that can be referenced and manipulated throughout a program.</p>
-<p>When you want to create a variable, you choose a name for the variable and assigning a value to it using the assignment operator (=). Variables can store various types of data (numbers, strings, lists, etc) and we will discuss them soon.</p>
+<p>In your first code, you wrote a simple <code class="docutils literal notranslate"><span class="pre">print()</span></code>, but python is way more excited than this. You can use variables to store values, and they act as boxes that stores information to be referenced throughout your program.</p>
+<p>When you want to create a variable, you choose a name for the variable and assigning a value with assignment operator (=). Variables can store various types of data (numbers, strings, lists, etc) and we will discuss them later.</p>
 </section>
 <section id="span-style-color-black-variable-names-span">
 <h2><span style="color:black;">Variable names</span><a class="headerlink" href="#span-style-color-black-variable-names-span" title="Permalink to this heading">#</a></h2>
-<p>It’s good practice to use descriptive and meaningful names for variables to enhance code readability. Once you create a variable, you can access the value of a variable by simply referring to its name in your code. Let’s do it! Open the code editor, create a new .py file, and write the below code:</p>
+<p>It’s good practice to use descriptive (but not long) names for variables to enhance code readability. Once you create a variable, you can access the value of a variable by simply referring to its name in your code. Let’s do it! Open the code editor, create a new <a class="reference external" href="http://example.py">example.py</a> file, and write the below code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating variables and assigning values</span>
 <span class="n">lake_name</span> <span class="o">=</span> <span class="s2">&quot;Lake Erin&quot;</span>
-<span class="n">depth_ft</span> <span class="o">=</span> <span class="mi">279</span>
-<span class="n">min_width_mi</span> <span class="o">=</span> <span class="mf">91.0</span>
-
 <span class="c1"># Accessing and using variable values</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the lake name?&quot;</span><span class="p">,</span> <span class="n">lake_name</span><span class="p">)</span>
+
+<span class="n">depth_ft</span> <span class="o">=</span> <span class="mi">279</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the lake depth:&quot;</span><span class="p">,</span> <span class="n">depth_ft</span><span class="p">)</span>
+
+<span class="n">min_width_mi</span> <span class="o">=</span> <span class="mf">91.0</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the minimum lake width:&quot;</span><span class="p">,</span> <span class="n">min_width_mi</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -550,7 +545,7 @@ Updated depth: 65
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Let’s understand the basic rules for variable names:</p>
+<p>Basic rules for variable names:</p>
 <ul class="simple">
 <li><p>Variables cannot start with a number</p></li>
 <li><p>Variables can contain letters (a-z, A-Z), numbers (0-9), and underscores (_)</p></li>
