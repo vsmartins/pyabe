@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Git and GitHub &#8212; Python Programming for Biosystems Engineering</title>
+    <title>Git &amp; GitHub &#8212; Python Programming for Biosystems Engineering</title>
   
   
   
@@ -61,11 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/8_advtopic/github';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ABE Application 1" href="../9_abe_apps/01_erosion.html" />
+    <link rel="prev" title="MultiProcessing" href="parallel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -220,10 +220,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../7_fileop/inputout.html"><span style="color:black;">File I/O</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">9-ADVANCED TOPICS</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="commandlines.html"><span style="color:black;">Command line interface</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="conda_env.html"><span style="color:black;">Conda Environments</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="parallel.html"><span style="color:black;">MultiProcessing</span></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><span style="color:black;">Git &amp; GitHub</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">10-ABE APPLICATIONS</span></p>
 <ul class="nav bd-sidenav">
@@ -463,7 +464,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><span style="color:black;">Git and GitHub</span></h1>
+    <h1><span style="color:black;">Git & GitHub</span></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -477,9 +478,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="span-style-color-black-git-and-github-span">
-<h1><span style="color:black;">Git and GitHub</span><a class="headerlink" href="#span-style-color-black-git-and-github-span" title="Permalink to this heading">#</a></h1>
-<p>Git is one of the standard version control systems used by developers to save code and work on code collaboratively as a team. Git is a program run on the command line or Anaconda Prompt. If you use Windows, the gitbash program can be downloaded at <a class="reference external" href="http://git-scm.com/downloads">git-scm.com/downloads</a>. Git was created by Linus Torvalds, who also designed the Linux operating system. <a class="reference external" href="http://GitHub.com">GitHub.com</a> (now owned by Microsoft) is a website and service used by programmers and open source projects to share code and allow contributors to propose changes to existing code. Other services such as <a class="reference external" href="http://BitBucket.org">BitBucket.org</a> can be integrated with git too. Both git and <a class="reference external" href="http://GitHub.com">GitHub.com</a> are useful for problem solvers working in teams. Before using git and <a class="reference external" href="http://GitHub.com">GitHub.com</a>, it is helpful to understand a couple of terms:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="span-style-color-black-git-github-span">
+<h1><span style="color:black;">Git &amp; GitHub</span><a class="headerlink" href="#span-style-color-black-git-github-span" title="Permalink to this heading">#</a></h1>
+<p>Git is a popular version control system for developers to manage and collaborate on code. It runs on the command line or Anaconda Prompt.</p>
+<p>Terms:</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -491,7 +493,7 @@ document.write(`
 <td><p>A command line program used to track file changes and collaborate on code with others.</p></td>
 </tr>
 <tr class="row-odd"><td><p>repo</p></td>
-<td><p>Short for “repository”. A repo is a directory and its contents.</p></td>
+<td><p>A repository is a directory and its contents.</p></td>
 </tr>
 <tr class="row-even"><td><p>local repo</p></td>
 <td><p>A directory and its contents on your computer that git knows about.</p></td>
@@ -501,7 +503,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>This table summarizes the basic terms related to Git and repositories. You can copy and paste this into your markdown file or editor.</p>
+<p>Options:</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -532,60 +534,6 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>Here’s a step-by-step guide in a markdown table format, based on the information you provided about using Git and GitHub:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Step</p></th>
-<th class="head"><p>Action</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1</p></td>
-<td><p><strong>Create a Remote Repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a></strong></p></td>
-<td><p>Go to <a class="reference external" href="http://GitHub.com/join">GitHub.com/join</a> and create a new account. Log in and create a new repo. It’s advisable to include a license and a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file. For Python projects, use the Python <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>. Common licenses include the GNU General Public License v3.0 and the MIT License.</p></td>
-</tr>
-<tr class="row-odd"><td><p>2</p></td>
-<td><p><strong>Make a New Local Repo and Link to the Remote Repo</strong></p></td>
-<td><p>Create a local directory and cd into it. Initialize a git repo locally with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code>. Sync the local folder with the remote repo using the following commands:<br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">newproject</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">newproject</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">init</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">https://github.com/user/repo.git</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">master</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>3</p></td>
-<td><p><strong>Add, Commit, and Push Changes to <a class="reference external" href="http://GitHub.com">GitHub.com</a></strong></p></td>
-<td><p>Work locally on the project, then save your work and commit the changes with git. Push those changes to the remote repo using:<br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;commit</span> <span class="pre">message&quot;</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>4</p></td>
-<td><p><strong>Pull the Most Recent Version from <a class="reference external" href="http://GitHub.com">GitHub.com</a> Before Each Work Session</strong></p></td>
-<td><p>Always pull the most recent version of the repo from <a class="reference external" href="http://GitHub.com">GitHub.com</a> before making any local changes:<br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">master</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>5</p></td>
-<td><p><strong>Save and Push Local Changes to <a class="reference external" href="http://GitHub.com">GitHub.com</a></strong></p></td>
-<td><p>After making local changes, save and push them to <a class="reference external" href="http://GitHub.com">GitHub.com</a>:<br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;commit</span> <span class="pre">message&quot;</span></code><br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code></p></td>
-</tr>
-</tbody>
-</table>
-<p>You can copy and paste this table into your markdown file or editor for a structured view of the steps involved in setting up and managing a project with Git and GitHub.</p>
-<p>Create a remote repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a></p>
-<p>First, go to <a class="reference external" href="http://GitHub.com/join">GitHub.com/join</a> and create a new account. Log in and create a new repo. It is a good idea to include a license and a .gitignore file. For a Python project, the .gitignore file for Python is a good start. Two common licenses for open source projects (projects you are willing to share with others) are the GNU General Public License v3.0 and the MIT License.</p>
-<p>Make a new local repo and link the local repo to the remote repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a>
-Second, create a local directory and cd into it. Initialize a git repo locally in that directory. Then synch the local folder with the remote repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a>.</p>
-<p><span class="math notranslate nohighlight">\( mkdir newproject
-\)</span> cd newproject
-<span class="math notranslate nohighlight">\( git init
-\)</span> git remote add origin <a class="github reference external" href="https://github.com/user/repo.git">user/repo.git</a>
-$ git pull origin master
-Add, commit and push changes up to <a class="reference external" href="http://Github.com">Github.com</a>
-Third, work on the project locally. For example, you could edit one of the files in the directory newproject or create a new file in the directory newproject.</p>
-<p>Finally, save your work and commit the changes you made with git. Push those changes up to the remote repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a></p>
-<p><span class="math notranslate nohighlight">\( git add .
-\)</span> git commit -m “commit message”
-$ git push origin master
-Pull the most recent version from <a class="reference external" href="http://GitHub.com">GitHub.com</a> before each work session
-If using git and <a class="reference external" href="http://GitHub.com">GitHub.com</a>, remember to pull the most recent version of the repo down from <a class="reference external" href="http://GitHub.com">GitHub.com</a> before you make any changes locally. If changes are made locally before the version of the repo on <a class="reference external" href="http://GitHub.com">GitHub.com</a> is synched, the local repo and remote repo will be out of synch.</p>
-<p>$ git pull origin master
-After local changes are made, save the changes and push to <a class="reference external" href="http://GitHub.com">GitHub.com</a></p>
-<p><span class="math notranslate nohighlight">\( git add .
-\)</span> git commit -m “commit message”
-$ git push orign master</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -619,6 +567,24 @@ $ git push orign master</p>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="parallel.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span style="color:black;">MultiProcessing</span></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../9_abe_apps/01_erosion.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ABE Application 1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
