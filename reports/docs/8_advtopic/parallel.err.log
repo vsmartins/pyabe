@@ -32,8 +32,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['# multiprocessing', 'from multiprocessing import Pool', 'import time', 'import os', '']
+['import multiprocessing as mp', 'import time', '', 'def calc_partial_pi(rank, nprocs, nsteps, dx):', '    partial_pi = 0.0']
 ...
-['    cpu=4', '    with Pool(cpu) as p:', '        print(p.map(work_func, range(0,12)))', '', '    print("***run time (Sec):", time.time() - start)']
+['    pool = mp.Pool(processes=nprocs)', '    result = pool.starmap(calc_partial_pi, inputs)', '    pi = sum(result)', '    t1 = time.time()', "    print(f'Execution time {t1 - t0} s for serial version')"]
 -------------------
 

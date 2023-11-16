@@ -64,8 +64,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/8_advtopic/parallel';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Git &amp; GitHub" href="github.html" />
-    <link rel="prev" title="Conda Environments" href="conda_env.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -226,10 +224,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../7_fileop/inputout.html"><span style="color:black;">File I/O</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">9-ADVANCED TOPICS</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="commandlines.html"><span style="color:black;">Command line interface</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="conda_env.html"><span style="color:black;">Conda Environments</span></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><span style="color:black;">MultiProcessing</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="github.html"><span style="color:black;">Git &amp; GitHub</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">10-MISCELLANEOUS</span></p>
@@ -505,7 +502,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time 14.76763391494751 s for serial version
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time 16.017908096313477 s for serial version
 </pre></div>
 </div>
 </div>
@@ -525,7 +522,9 @@ document.write(`
 </div>
 </div>
 <p>Let’s run it:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">multiprocessing</span> <span class="k">as</span> <span class="nn">mp</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="k">def</span> <span class="nf">calc_partial_pi</span><span class="p">(</span><span class="n">rank</span><span class="p">,</span> <span class="n">nprocs</span><span class="p">,</span> <span class="n">nsteps</span><span class="p">,</span> <span class="n">dx</span><span class="p">):</span>
@@ -552,8 +551,9 @@ document.write(`
     <span class="n">pi</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
     <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Execution time </span><span class="si">{</span><span class="n">t1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">t0</span><span class="si">}</span><span class="s1"> s for serial version&#39;</span><span class="p">)</span>
-
 </pre></div>
+</div>
+</div>
 </div>
 <p><strong>Multiprocessing vs Multithreading</strong></p>
 <p>A thread always exists within a process and represents the manner in which instructions or code is executed. A process will have at least one thread, called the main thread.</p>
@@ -638,24 +638,6 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="conda_env.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span style="color:black;">Conda Environments</span></p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="github.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span style="color:black;">Git &amp; GitHub</span></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
