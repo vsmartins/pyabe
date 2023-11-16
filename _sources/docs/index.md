@@ -14,7 +14,7 @@ Speaking from personal experience, Python has been instrumental in my journey as
 
 ## <span style="color:black;">My motivation</span>
 
-Ever since my graduation over a decade ago, my daily routine has revolved around coding and data analysis, and Python made a big difference in my productivity and outcomes. This tutorial was built to be simple Python learning for practitioners like me, and my tutorial focuses on basic concepts of Python with concise explanations and examples that you need as a practitioner. There are many other Python tutorials and this one might be the kick-off experience within this programming language.
+My daily routine has revolved around coding and data analysis, and Python made a big difference in my productivity and outcomes. This tutorial was built to be simple Python learning for practitioners like me, and my tutorial focuses on basic concepts of Python with concise explanations and examples that you need as a practitioner. There are many other Python tutorials and this one might be the kick-off experience within this programming language.
 
 ```{image} /pyabe_logo.png
 :width: 250px
