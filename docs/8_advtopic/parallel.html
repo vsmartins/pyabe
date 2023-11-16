@@ -502,7 +502,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time 16.017908096313477 s for serial version
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time 14.333876609802246 s for serial version
 </pre></div>
 </div>
 </div>
@@ -551,6 +551,29 @@ document.write(`
     <span class="n">pi</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
     <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Execution time </span><span class="si">{</span><span class="n">t1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">t0</span><span class="si">}</span><span class="s1"> s for serial version&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception in thread Thread-5:
+Traceback (most recent call last):
+  File &quot;C:\anaconda3\envs\abe_website\lib\threading.py&quot;, line 926, in _bootstrap_inner
+    self.run()
+  File &quot;C:\anaconda3\envs\abe_website\lib\threading.py&quot;, line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\pool.py&quot;, line 412, in _handle_workers
+    pool._maintain_pool()
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\pool.py&quot;, line 248, in _maintain_pool
+    self._repopulate_pool()
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\pool.py&quot;, line 241, in _repopulate_pool
+    w.start()
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\process.py&quot;, line 112, in start
+    self._popen = self._Popen(self)
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\context.py&quot;, line 322, in _Popen
+    return Popen(process_obj)
+  File &quot;C:\anaconda3\envs\abe_website\lib\multiprocessing\popen_spawn_win32.py&quot;, line 72, in __init__
+    None, None, False, 0, env, None, None)
+PermissionError: [WinError 5] Access is denied
 </pre></div>
 </div>
 </div>
